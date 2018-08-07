@@ -1,1 +1,16 @@
+person:
+  last-name: 李四-${random.uuid}
+
+  age: ${random.int(100)}
+
+  boss: true
+
+  birth: 2018/08/02
+
+  maps: {K1: '${random.long}', K2: V2, K3: V3}
+
+  lists: [tom, jack, jual]
+
+  dog: {name: '${person.name: 张三}的二哈', age: 4}
+
 
