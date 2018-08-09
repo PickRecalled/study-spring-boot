@@ -1,16 +1,24 @@
-person:
-  last-name: 李四-${random.uuid}
+spring:
+  profiles:
+    active: test
 
-  age: ${random.int(100)}
+---
+#prod
+spring:
+  profiles: prod
+server:
+  port: 9999
 
-  boss: true
+---
+#dev
+spring:
+  profiles: dev
+server:
+  port: 8888
 
-  birth: 2018/08/02
-
-  maps: {K1: '${random.long}', K2: V2, K3: V3}
-
-  lists: [tom, jack, jual]
-
-  dog: {name: '${person.name: 张三}的二哈', age: 4}
-
-
+---
+#test
+spring:
+  profiles: test
+server:
+  port: 7777
