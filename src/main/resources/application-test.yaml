@@ -1,5 +1,0 @@
-#test
-spring:
-  profiles: test
-server:
-  port: 7777

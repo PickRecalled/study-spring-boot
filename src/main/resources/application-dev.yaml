@@ -1,5 +1,0 @@
-#dev
-spring:
-  profiles: dev
-server:
-  port: 8888
