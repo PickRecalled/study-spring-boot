@@ -1,7 +1,0 @@
-logging:
-  level:
-    root: trace
-  pattern:
-    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n'
-    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} [ %thread ] - [ %-5level ] [ %logger{50} : %line ] - %msg%n'
-  path: /Users/shuang/Downloads/study-spring-boot/logs/
