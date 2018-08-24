@@ -1,0 +1,17 @@
+package com.pickrecalled.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+@Configuration
+@EnableWebMvc
+public class MvcExtensionConfig extends WebMvcConfigurerAdapter {
+
+	@Override
+	public void addViewControllers(ViewControllerRegistry registry) {
+		// 浏览器发起请求跳转到success界面
+		registry.addViewController("/index").setViewName("success");
+	}
+}
