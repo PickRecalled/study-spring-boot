@@ -22,8 +22,8 @@ public class MvcExtensionConfig implements WebMvcConfigurer {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		// addPathPatterns("/**")拦截所有的请求
-		// excludePathPatterns("/", "/login", "/user/login")排出的请求
-		registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("/", "/login", "/user/login");
+		// excludePathPatterns("/", "/login", "/user/login", "/asserts/**")排出的请求
+		registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("/", "/login", "/user/login", "/asserts/**");
 	}
 
 	@Bean
